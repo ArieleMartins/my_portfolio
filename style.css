@@ -53,10 +53,14 @@ header .menu ul{
 .apresentacao{
     width: 100%;
     height: 800px;
-    display: flex;
+    display:grid;
     align-items:center;
     justify-content: center;
     text-align: center;
+}
+.apresentacao img{
+    width: 450px;
+    height: 300px;
 }
 .apresentacao h1{
     height: 150px;
