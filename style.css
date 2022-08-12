@@ -28,6 +28,8 @@ header{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 header .menu a{
     color: white;
@@ -39,9 +41,10 @@ header .menu .logo{
 }
 header .menu{
     display: grid;
-    grid-template-columns: 30% 50%;
+    grid-template-columns: 30% 70%;
     align-items: center;
     height: 70px;
+    width: 80%;
 }
 header .menu ul{
     display: flex;
@@ -63,6 +66,8 @@ header .menu ul{
     height: 300px;
 }
 .apresentacao h1{
+    color:white;
+    font-family: 'Aboreto', cursive;
     height: 150px;
     width: 500px;
 }
