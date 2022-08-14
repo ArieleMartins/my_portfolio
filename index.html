@@ -1,45 +1,67 @@
 <!DOCTYPE html> <!-- Para o navegador identiificar que é um arquivo html-->
-<html lang="pt-br"> <!-- Idioma do site -->
+<html lang="pt-br">
+<!-- Idioma do site -->
+
 <head>
     <meta charset="UTF-8"> <!-- Indicar os caracteres utilizados no site -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptar para outros dispositivos -->
     <meta name="description" content=""> <!-- Uma breve descrição do site/conteudo -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio - Ariele Martins</title> <!-- Titulo da aba -->
 </head>
+
 <body>
-    <header class="cabecalho"> <!-- Indica que o conteudo que esta nele é um cabeçalho -->
-        <a href="#" class="logo"> <!-- Logo -->
-            {AM}
-        </a>
-        <nav> <!-- Menu de navegação -->
-            <ul>
-                <li><a href="#" class="inicio">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Projetos</a></li>
-            </ul>
-        </nav>
+    <header class="cabecalho">
+        <!-- Indica que o conteudo que esta nele é um cabeçalho -->
+        <div class="container-menu">
+            <a href="#" class="logo">
+                <!-- Logo -->
+                {AM}
+            </a>
+            <nav>
+                <!-- Menu de navegação -->
+                <ul>
+                    <li><a href="#" class="inicio">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main> <!-- Conteudo principal -->
-        <section>
-            <div>
-                <h1></h1>
-                <h2></h2>
-                <!--<button>GitHub</button>-->
-                <!--<button>Linkedin</button>-->
+    <main class="container-principal">
+        <!-- Conteudo principal -->
+        <div class="central">
+        <section class="apresentacao">
+
+            <div class="container-apresentacao">
+                <div class="container-central">
+                    <h1>Olá, eu sou<p class="name">Ariele Martins</p>
+                    </h1>
+                    <h2 class="dev">Desenvolvedora Front-End</h2>
+                    <a href="https://github.com/ArieleMartins" target="_blank" class="fa-brands fa-github github">
+                        GitHub</a>
+                    <a href="https://www.linkedin.com/in/ariele-martins-b427541bb/" target="_blank" class="fa-brands fa-linkedin linkedin" style="margin-left:100px"> Linkedin</a>
+                </div>
             </div>
-            <div>
-                
+            <div class="container-imagem">
+                <img src="imgs/design_portfolio2.png">
             </div>
+
         </section>
+    </div>
         <section>
-            
+
         </section>
     </main>
-    <footer> <!-- Rodape da pagina -->
+    <footer>
+        <!-- Rodape da pagina -->
 
     </footer>
 </body>
+
 </html>
