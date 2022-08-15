@@ -29,8 +29,11 @@ body{
     margin: auto;
     grid-template-columns: 60% 40%;
 }
-.cabecalho nav ul .inicio,.cabecalho .logo{
+.cabecalho .logo{
     color: rgb(156, 53, 74);
+}
+.cabecalho nav ul li a:hover{
+    color: rgb(156, 53, 74);;
 }
 .cabecalho nav ul li a{
     color:white;
@@ -48,25 +51,19 @@ body{
 }
 .container-principal{
     width: 90%;
-    height: 700px;
     margin:auto;
-    display:flex;
+    display:grid;
+    grid-template-columns: 100%;
    align-items: center;
 }
 .apresentacao{
     font-family: 'Aboreto', cursive;
     width: 100%;
     display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
     align-items: center;
     justify-content: center;
-    
-}
-.apresentacao .container-apresentacao h1{
-    color:white;
-    font-size: 35px;
-    text-align: justify;
+    grid-gap:0px 35px;
 }
 .apresentacao .container-apresentacao h2{
     color: white;
@@ -74,20 +71,17 @@ body{
 }
 .name{
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 65px;
     color:rgb(156, 53, 74);
-}
-.apresentacao .container-apresentacao{
-    display: flex;
-    align-items: center;
 }
 .apresentacao .container-apresentacao .github, .apresentacao .container-apresentacao .linkedin{
     color:rgb(156, 53, 74);
     border:solid 3px rgb(156, 53, 74);
     border-radius: 20px;
     padding: 20px;
-    margin-top:100px;
+    font-size: 20px;
+    margin-top:10vh;
 }
 .apresentacao .container-apresentacao .github:hover, .apresentacao .container-apresentacao .linkedin:hover{
     color:rgb(196, 77, 101);
@@ -107,4 +101,35 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media(max-width:600px) {
+    .container-imagem img{
+        max-width: 320px;
+        margin-top: 50px;
+    }
+    .container-principal{
+        width: 100%;
+    }
+    .container-apresentacao{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .name{
+        font-size: 6vh
+    }
+    .apresentacao .container-apresentacao h2{
+        font-size: 3vh;
+    }
+    .apresentacao .container-apresentacao .github, .apresentacao .container-apresentacao .linkedin{
+        font-size: 10px;
+    }
+    .central{
+        height: 650px;
+    }
+}
+@media(max-width:1366px){
+    .central{
+        height: 650px;
+    }
 }
