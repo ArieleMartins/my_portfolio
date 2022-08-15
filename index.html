@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptar para outros dispositivos -->
     <meta name="description" content=""> <!-- Uma breve descrição do site/conteudo -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,15 +26,15 @@
             <nav>
                 <!-- Menu de navegação -->
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#">Habilidades</a></li>
                     <li><a href="#">Projetos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="container-principal">
+    <main class="container-principal" id="home">
         <!-- Conteudo principal -->
         <div class="central">
             <section class="apresentacao">
@@ -51,14 +52,33 @@
                     </div>
                 </div>
                 <div class="container-imagem">
-                    <img src="imgs/design_portfolio2.png">
+                    <img src="imgs/design_portfolio2.png" alt="Ilustração - terminal e layout">
                 </div>
 
             </section>
         </div>
-        
+
     </main>
-    <section style="background-color:white; height:400px">
+    <section class="section-sobre" id="sobre">
+        <div class="container-grid">
+            <div class="container-sobre-img">
+                <img src="" alt="Ilustração - Programando - Ilustrador: Maison Melo">
+            </div>
+            <div class="container-sobre">
+                <h3 class="titulo">SOBRE MIM</h3>
+                <p class="sub">São Paulo, SP</p>
+                <p class="sub2">Objetivo Profissional: Desenvolvedora FullStack</p>
+                <p class="texto">Olá, me chamo Ariele, sou formada em técnico em informática e pretendo cursar Analise e
+                    desenvolvimento de software.
+                    Meu primeiro contato com programação foi em um curso EAD de desenvolvimento de games onde comecei a
+                    mexer com as linguagens c# e java, porém não me identifiquei com a área de games. Então, me
+                    matriculei
+                    no curso técnico em informática, onde conheci outras áreas de TI, descobrir que programação é
+                    exatamente o que quero seguir como profissão. Hoje, continuo estudando para seguir a carreira como
+                    desenvolvedora fullstack.
+                </p>
+            </div>
+        </div>
     </section>
     <footer>
         <!-- Rodape da pagina -->
