@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital,wght@0,500;1,400&family=Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Kanit&family=Playfair+Display:ital,wght@0,500;1,400&family=Righteous&family=Roboto+Mono&display=swap');
 *{
     padding:0px;
     margin: 0px;
@@ -57,7 +56,7 @@ body{
    align-items: center;
 }
 .apresentacao{
-    font-family: 'Aboreto', cursive;
+    font-family: 'Kanit', sans-serif;
     width: 100%;
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(200px, auto));
@@ -72,9 +71,12 @@ body{
 .name{
     margin-top: 15px;
     margin-bottom: 30px;
-    font-size: 65px;
+    font-size: 90px;
     color:rgb(156, 53, 74);
-}
+    border-right: solid 5px rgb(156, 53, 74);
+    white-space: nowrap;
+    overflow: hidden;
+} 
 .apresentacao .container-apresentacao .github, .apresentacao .container-apresentacao .linkedin{
     color:rgb(156, 53, 74);
     border:solid 3px rgb(156, 53, 74);
@@ -102,7 +104,25 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.animacao-pisca{
+    animation: pisca 1s steps(12) infinite normal, digitando steps(12) 1.35s 1s normal;
+}
+@keyframes digitando{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes pisca{
+    from{
+        border-color: rgb(156, 53, 74);
+    }
+    to{
+        border-color:transparent;
+    }
+}
 @media(max-width:600px) {
     .container-imagem img{
         max-width: 320px;
@@ -117,8 +137,9 @@ body{
         width: 100%;
     }
     .name{
-        font-size: 6vh
+        font-size: 7vh;
     }
+    
     .apresentacao .container-apresentacao h2{
         font-size: 3vh;
     }
