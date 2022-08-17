@@ -8,7 +8,7 @@
     color:white;
     
 }
-.container-grid{
+.container-grid-sobre{
     display: grid;
     grid-template-columns: 40% 60%;
     width: 90%;
