@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital,wght@0,500;1,400&family=Righteous&display=swap');
 .section-sobre{
-    background-color: rgb(17, 16, 24);
-    height: 700px;
+    background-color: #111018;
+    height: 810px;
     display: grid;
     justify-content: center;
     align-items: center;
