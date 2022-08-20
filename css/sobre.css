@@ -29,6 +29,7 @@
 .container-sobre-img img{
     width: 400px;
     height: 400px;
+    animation: flutuar 1.5s ease-in-out infinite;
 }
 .titulo{
     display: grid;
@@ -54,4 +55,26 @@
     display: grid;
     grid-area: t;
     line-height: 27px;
+}
+@keyframes flutuar{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+@media(max-width:600px){
+    .container-sobre-img img{
+        width: 250px;
+        height: 250px;
+    }
+    .section-sobre{
+        height: 900px !important;
+    }
+    .container-sobre-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
