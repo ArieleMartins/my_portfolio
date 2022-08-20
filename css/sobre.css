@@ -64,7 +64,7 @@
         transform: translateY(-10px);
     }
 }
-@media(max-width:600px){
+@media(max-width:800px){
     .container-sobre-img img{
         width: 250px;
         height: 250px;
