@@ -26,6 +26,10 @@
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
+.container-sobre-img img{
+    width: 400px;
+    height: 400px;
+}
 .titulo{
     display: grid;
     grid-area: s;
