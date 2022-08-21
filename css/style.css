@@ -8,7 +8,6 @@
 }
 body{
     font-size: 100%;
-    /*background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);*/
     background-color: rgb(7, 6, 14);
 }
 .cabecalho{
@@ -61,7 +60,7 @@ body{
     font-family: 'Kanit', sans-serif;
     width: 100%;
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit,minmax(300px, auto));
     align-items: center;
     justify-content: center;
     grid-gap:0px 35px;
@@ -73,7 +72,7 @@ body{
 .name{
     margin-top: 15px;
     margin-bottom: 30px;
-    font-size: 90px;
+    font-size: 80px;
     color:rgb(156, 53, 74);
     border-right: solid 5px rgb(156, 53, 74);
     white-space: nowrap;
@@ -95,7 +94,7 @@ body{
     
 }
 .container-imagem img{
-    max-width: 650px;
+    max-width: 630px;
     
 }
 
@@ -125,10 +124,10 @@ body{
         border-color:transparent;
     }
 }
-@media(max-width:800px) {
+@media(max-width:1000px) {
     .container-imagem img{
-        max-width: 320px;
-        margin-top: 50px;
+        max-width: 320px !important;
+        margin-top: 50px !important;
     }
     .container-principal{
         width: 100%;

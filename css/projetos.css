@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital,wght@0,500;1,400&family=Righteous&display=swap');
+
+.container-projetos{
+    min-height: 810px;
+    background-color: #111018;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Playfair Display';
+}
+.grid-p{
+    margin: auto;
+    width: 90%;
+}
+.grid-projeto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 340px;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
+.container-projetos h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px 30px 0px;
+}
+.mais-projetos{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor:pointer;
+}
+.grid-projeto.ativo{
+    overflow-y: visible;
+    height: 100%;
+}
+.item{
+    display: flex;
+    align-items: center;
+    text-align:center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 350px;
+    height: 300px;
+    background-color: rgb(66, 30, 37);
+    border-radius: 20px;
+}
