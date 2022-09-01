@@ -21,7 +21,7 @@
     grid-template-areas: "s s"
                 "c o"
                 "t t";
-    grid-template-rows: 12vh 10vh;
+    row-gap: 30px;
     padding: 5vh;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -40,6 +40,8 @@
     grid-area: s;
     font-size: 30px;
     font-family: 'Playfair Display';
+    border-left: solid 5px rgb(156, 53, 74);
+    padding: 10px;
 }
 .sub{
     display: grid;
