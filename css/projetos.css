@@ -2,7 +2,6 @@
 
 .container-projetos{
     min-height: 810px;
-    background-color: #111018;
     display: flex;
     flex-direction: column;
     justify-content: center;
