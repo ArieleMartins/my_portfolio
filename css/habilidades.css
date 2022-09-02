@@ -19,4 +19,18 @@
     background-color: #111018;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+
+    
+}
+@media(max-width:750px){
+    .container-hab{
+        gap:10px;
+    }
+    .container-hab .habilidades img{
+        width: 30px;
+        height: 30px;
+    }
+    .container-hab .habilidades{
+        height: 60px;
+    }
 }

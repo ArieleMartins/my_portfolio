@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital,wght@0,500;1,400&family=Righteous&display=swap');
-
-.container-projetos{
-    min-height: 810px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    font-family: 'Playfair Display';
-}
 .grid-p{
     margin: auto;
     width: 90%;
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    font-family: 'Playfair Display';
 }
 .grid-projeto{
     display: grid;
@@ -20,8 +16,6 @@
     align-items: center;
     padding: 20px;
     height: 340px;
-    overflow-x:hidden;
-    overflow-y: hidden;
     column-gap: 100px;
     row-gap: 50px;
 }
@@ -37,18 +31,37 @@
     margin-top: 10px;
     cursor:pointer;
 }
-.grid-projeto.ativo{
-    overflow-y: visible;
-    height: 100%;
-}
 .item{
     display: flex;
-    align-items: center;
-    text-align:center;
     overflow: hidden;
     cursor: pointer;
     width: 350px;
     height: 300px;
     background-color: rgb(66, 30, 37);
-    border-radius: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.item .embreve{
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.p-1{
+    background-image: url('../imgs/supermarketsystem.png');
+    background-size:contain;
+    color: black;
+}
+@media(max-width:1000px){
+    .grid-projeto{
+        grid-template-columns: 1fr;
+    }
+    .grid-p{
+        height: 1150px !important;
+    }
 }
