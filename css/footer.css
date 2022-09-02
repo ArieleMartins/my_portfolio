@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital,wght@0,500;1,400&family=Righteous&display=swap');
+footer{ 
+    background-color: #111018;
+    height: 95px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin:0px 20px 20px 20px;
+    font-family: 'Playfair Display';
+    padding: 5px;
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+}
+.container-footer .creditos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.container-footer .contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:1000px){
+    .container-footer{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:600px){
+    footer{
+        height: 200px;
+        text-align: center;
+    }
+}

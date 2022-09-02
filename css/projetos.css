@@ -57,7 +57,12 @@
     background-image: url('../imgs/supermarketsystem.png');
     background-size:contain;
     color: black;
-    z-index: 1;
+}
+
+@media(max-width:1366px){
+  .grid-p{
+    height: 650px !important;
+  }
 }
 @media(max-width:1000px){
     .grid-projeto{

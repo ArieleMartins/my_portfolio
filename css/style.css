@@ -29,8 +29,11 @@ body{
     margin: auto;
     grid-template-columns: 60% 40%;
 }
-.cabecalho .logo{
+.logo{
     color: rgb(156, 53, 74);
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    width: 50px;
 }
 .cabecalho nav ul li a:hover{
     color: #9c354a;;
@@ -38,11 +41,6 @@ body{
 .cabecalho nav ul li a{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
-}
-.cabecalho .logo{
-    font-family: 'Righteous', cursive;
-    font-size: 30px;
-    width: 50px;
 }
 .cabecalho nav ul{
     width: 500px;
@@ -110,6 +108,20 @@ body{
 .animacao-pisca{
     animation: pisca 1s steps(12) infinite normal, digitando steps(12) 1.35s 1s normal;
 }
+.menu-resp{
+    width: 65px;
+    height: 65px;
+    border:solid 3px rgb(196, 77, 101);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: fixed;
+}
+.menu-resp .logo{
+    font-size: 20px;
+}
 @keyframes digitando{
     from{
         width: 0px;
@@ -126,7 +138,7 @@ body{
         border-color:transparent;
     }
 }
-@media(max-width:1000px) {
+@media(max-width:1300px) {
     .container-imagem img{
         max-width: 320px !important;
         margin-top: 50px !important;
@@ -167,6 +179,17 @@ body{
         width: 100% !important;
         grid-template-columns: 100% !important;
     }
+    .cabecalho{
+        display: none;
+    }
+    .menu-resp{
+        display: flex;
+        bottom:10px;
+        right: 10px;
+        z-index: 1;
+        background-color: rgb(7, 6, 14);
+    }
+   
     
 }
 @media(max-width:1366px){
