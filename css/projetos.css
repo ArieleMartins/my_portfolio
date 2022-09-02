@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color:white;
     font-family: 'Playfair Display';
 }
@@ -56,6 +57,7 @@
     background-image: url('../imgs/supermarketsystem.png');
     background-size:contain;
     color: black;
+    z-index: 1;
 }
 @media(max-width:1000px){
     .grid-projeto{
@@ -63,5 +65,6 @@
     }
     .grid-p{
         height: 1150px !important;
+        justify-content: unset;
     }
 }
