@@ -64,7 +64,7 @@
     height: 650px !important;
   }
 }
-@media(max-width:1000px){
+@media(max-width:1300px){
     .grid-projeto{
         grid-template-columns: 1fr;
     }
