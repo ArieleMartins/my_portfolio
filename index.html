@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/habilidades.css">
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menumobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,8 +20,15 @@
 </head>
 
 <body>
-    <div id="menu" class="menu-resp">
-        <a class="logo">{AM}</a>
+    <div class="menu-resp" id="menu-mobile">
+        <div class="items">
+            <li class="item-1"><a href="#home">Home</a></li>
+            <li class="item-2"><a href="#sobre">Sobre</a></li>
+            <li class="item-3"><a href="#projetos">Projetos</a></li>
+        </div>
+        <div id="menu" class="menu">
+            <a class="logo">{AM}</a>
+        </div>
     </div>
     <header class="cabecalho">
         <div class="container-menu">
@@ -136,14 +144,22 @@
     </section>
     <footer>
         <div class="container-footer">
-        <div class="creditos">
-            <p>Desenvolvido por Ariele Martins</p>
-            <p>Ilustração - Garota programando - Maison Melo</p>
+            <div class="creditos">
+                <p class="label-creditos">Créditos:</p>
+                <p>Ilustração - Garota programando - Maison Melo</p>
+            </div>
+            <div class="contato">
+                <p class="label-email">Email para contato:</p>
+                <p><i class="fa-regular fa-envelope"></i> ariele.cmmelo@gmail.com</p>
+            </div>
+            <div class="telefone">
+                <p class="label-telefone">Whatsapp:</p>
+                <p><i class="fa-brands fa-whatsapp"></i> (11) 96794-9763</p>
+            </div>
         </div>
-        <div class="contato">
-            <p>Email para contato: ariele.cmmelo@gmail.com</p>
+        <div class="copy">
+            <p>Copyright &copy 2022 - Desenvolvido por Ariele Martins</p>
         </div>
-    </div>
     </footer>
 </body>
 

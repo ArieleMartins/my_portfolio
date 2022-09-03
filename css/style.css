@@ -41,6 +41,7 @@ body{
 .cabecalho nav ul li a{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s ease-in-out;
 }
 .cabecalho nav ul{
     width: 500px;
@@ -108,20 +109,7 @@ body{
 .animacao-pisca{
     animation: pisca 1s steps(12) infinite normal, digitando steps(12) 1.35s 1s normal;
 }
-.menu-resp{
-    width: 65px;
-    height: 65px;
-    border:solid 3px rgb(196, 77, 101);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    position: fixed;
-}
-.menu-resp .logo{
-    font-size: 20px;
-}
+
 @keyframes digitando{
     from{
         width: 0px;
@@ -182,13 +170,7 @@ body{
     .cabecalho{
         display: none;
     }
-    .menu-resp{
-        display: flex;
-        bottom:10px;
-        right: 10px;
-        z-index: 1;
-        background-color: rgb(7, 6, 14);
-    }
+    
    
     
 }
