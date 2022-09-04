@@ -2,6 +2,7 @@
 ###
 Bem-vindo !!!
 Este é o inicio do meu portfolio e estarei sempre o atualizando de acordo com a minha evolução.
+<p>Link do <a target="_blank" href="https://arielemartins.github.io/my_portfolio/">Portfolio</a></p>
 <h1>Sobre o desenvolvimento</h1>
 <p>Ele foi desenvolvido somente com HTML, CSS e JS</p>
 
