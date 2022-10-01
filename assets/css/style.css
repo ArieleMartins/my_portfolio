@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    padding: 20px 0px;
+    background-color: #111018;
+    color:white;
+    transition: background 1s;
+    font-family: 'Merriweather Sans';
+}
+
+main {
+    width: 341px;
+    height: 996px;
+    
+    display: flex;
+    flex-direction: column;
+}
+main, .cabecalho, .container-sobre, .container-formacao, .container-projetos, .container-desc-links{
+    background-color: #111018;
+    border: 2px solid #312F34;
+    border-radius: 20px;
+    
+}
+.container-flex {
+    width: 1002px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.container-flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho {
+    width: 1002px;
+    height: 56px;
+    
+}
+
+.cabecalho .menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    list-style: none;
+    
+}
+.menu ul li a{
+    color:white;
+    text-decoration: none;
+    
+}
+.container-sobre {
+    width: 1002px;
+    height: 427px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-formacao {
+    width: 664px;
+    height: 300.3px;
+}
+
+.principal{
+    display: none;
+    
+}
+.a-sobre, .a-projetos, .principal{
+    cursor: pointer;
+}

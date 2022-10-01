@@ -1,0 +1,105 @@
+@media(max-width:1325px){
+    .select-sobre .principal, .select-sobre .a-projetos, .select-projetos .principal, .select-projetos .a-sobre{
+        background-color: #474747;
+    }
+    .select-projetos .container-sobre, .select-projetos .container-formacao, .select-sobre main, .select-projetos main{
+        display: none;
+    }
+    .select-sobre .container-sobre{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        column-gap: 0px;
+        padding: 30px 0px;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .select-sobre  .container-text-sobre p{
+        width: 92vw;
+        font-size: 13px;
+    }
+    .select-sobre .container-flex-around{
+        justify-content: center;
+    }
+    .select-sobre .container-formacao{
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 20px;
+        height: 100%;
+        width: 100vw;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-size: 14px;
+        display: flex;
+    }
+    .select-sobre .cursos{
+        border-left: none;
+        border-top: 2px solid #312F34;
+        padding: 20px 40px;
+    }
+    .select-sobre .container-img-sobre figure{
+        max-width: 300px;
+    }
+    .select-sobre .menu ul .a-sobre, .select-projetos .a-projetos{
+        background-color: #111018;
+    }
+    .select-projetos .container-projetos{
+        display:flex;
+        width: 100%;
+        border-color:#111018;
+        height: 800px;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .select-projetos .container-grid{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 30px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .select-projetos .container-imagem figure {
+        width: 278px;
+        height: 155px;
+    }
+    .select-projetos .container-projeto {
+        width: 278px;
+        height: 346px;
+    }
+    .select-projetos .container-links .container-play .play {
+        padding: 3px 20px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .select-projetos .container-desc-links h3{
+        font-size: 15px;
+    }
+    .select-projetos .repo-github {
+        height: 30px;
+        padding: 3px 5px;
+        font-size: 16px;
+    }
+    .select-projetos .container-desc-links {
+        width: 278px;
+        height: 190px;
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    
+    }
+    .select-projetos .tecnologias ul {
+        font-size: 12px;
+    }
+    .select-projetos .desc p {
+        font-size: 12px;
+    }
+    .select-principal .container-sobre, .select-principal .container-projetos, .select-principal .container-formacao{
+        display: none !important;
+    }    
+}

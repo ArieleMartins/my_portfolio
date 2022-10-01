@@ -1,172 +1,275 @@
-<!DOCTYPE html> <!-- Para o navegador identiificar que é um arquivo html-->
+<!DOCTYPE html>
 <html lang="pt-br">
-<!-- Idioma do site -->
 
 <head>
-    <meta charset="UTF-8"> <!-- Indicar os caracteres utilizados no site -->
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptar para outros dispositivos -->
-    <meta name="description" content=""> <!-- Uma breve descrição do site/conteudo -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/habilidades.css">
-    <link rel="stylesheet" href="css/projetos.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/menumobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio - Ariele Martins</title> <!-- Titulo da aba -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/tema.css">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <link rel="stylesheet" href="assets/css/projetos.css">
+    <link rel="stylesheet" href="assets/css/mobile/mobile_tema.css">
+    <link rel="stylesheet" href="assets/css/mobile/mobile_main.css">
+    <link rel="stylesheet" href="assets/css/mobile/mobile_telas.css">
+    <title>Sobre - Portfolio</title>
 </head>
 
 <body>
-    <div class="menu-resp" id="menu-mobile">
-        <div class="items">
-            <li class="item-1"><a href="#home">Home</a></li>
-            <li class="item-2"><a href="#sobre">Sobre</a></li>
-            <li class="item-3"><a href="#projetos">Projetos</a></li>
-        </div>
-        <div id="menu" class="menu">
-            <a class="logo">{AM}</a>
+    <div class="container-flex-around" id="container-flex">
+        <main>
+            <div class="container-tema">
+                <div class="tema" id="tema" title="Mudar tema">
+                    <i class="fa-regular fa-sun" id="icon-sun"></i>
+                    <div class="bolinha" id="bolinha">
+                    </div>
+                    <i class="fa-solid fa-moon" id="icon-moon"></i>
+                </div>
+
+            </div>
+            <div class="container-perfil">
+                <div class="container-img-cargo">
+                    <figure>
+                        <img src="assets/imgs/perfil.png" alt="Imagem de perfil do GitHub">
+                    </figure>
+                    <h2 class="nome">Ariele Martins</h2>
+                    <p class="cargo">Desenvolvedora Front-End</p>
+                    <div class="container-location">
+                        <i class="fa-solid fa-location-dot"></i><span>Brasil, São Paulo - SP</span>
+                    </div>
+                </div>
+                <div class="container-redes">
+                    <a href="https://github.com/ArieleMartins" target="_blank"><i class="fa-brands fa-github-alt"
+                            title="GitHub"></i></a>
+                    <a href="https://www.linkedin.com/in/ariele-martins-b427541bb/" target="_blank" title="Linkedin"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/11967949763" target="_blank" title="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="container-skills">
+                    <div class="skill">
+                        <h5><span class="h">HTML</span> - 80%</h5>
+                        <div class="barra">
+                            <div class="progresso html">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>CSS3 - 60%</h5>
+                        <div class="barra">
+                            <div class="progresso css">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>Javascript - 40%</h5>
+                        <div class="barra">
+                            <div class="progresso js">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>GIT - 20%</h5>
+                        <div class="barra">
+                            <div class="progresso git">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>Github - 60%</h5>
+                        <div class="barra">
+                            <div class="progresso github">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>PHP - 15%</h5>
+                        <div class="barra">
+                            <div class="progresso php">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h5>Python - 10%</h5>
+                        <div class="barra">
+                            <div class="progresso python">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-email">
+                    <div class="email">
+                        <i class="fa-regular fa-envelope"></i><span>ariele.cmmelo@gmail.com</span>
+                    </div>
+                </div>
+                <div class="container-desenvolvedores">
+                    <p>2022 - Desenvolvido por Ariele Martins</p>
+                </div>
+            </div>
+        </main>
+        <div class="container-flex">
+            <header class="cabecalho">
+                <nav class="menu">
+                    <ul>
+                        <li class="principal" id="principal"><a>Principal</a></li>
+                        <li class="a-sobre" id="sobre"><a>Sobre</a></li>
+                        <li class="a-projetos" id="projetos"><a>Projetos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="container-sobre" id="container-sobre">
+                <div class="container-img-sobre">
+                    <figure>
+                        <img src="assets/imgs/ilustracao_maison_renan.png"
+                            alt="Ilustração garota programando - Ilustrado : Maison Renan">
+                    </figure>
+                </div>
+                <div class="container-text-sobre">
+                    <h1>Sobre</h1>
+                    <p class="objetivo">Objetivo Profissional: Desenvolvedora FullStack / Back-End</p>
+                    <p>Olá, me chamo Ariele e meu primeiro contato com programação foi em um curso a distância de
+                        desenvolvimento de games, onde comecei a mexer com as linguagens c# e java, porém não me
+                        identifiquei com a área de games. Então, me matriculei no curso técnico, onde conheci outras
+                        áreas de T.I e descobri que programação é exatamente o que quero seguir como profissão. Hoje,
+                        continuo estudando para seguir a carreira como desenvolvedora Full Stack / Back-End. </p>
+                </div>
+            </section>
+            <section class="container-formacao" id="container-formacao">
+                <div class="formacao">
+                    <h3>Formação</h3>
+                    <ul>
+                        <li>
+                            Técnico em Informática
+                            <p>2020 - 2022</p>
+                            <p>Senac</p>
+                        </li>
+                        <li>
+                            Ensino Médio
+                            <p>2014 - 2016</p>
+                            <p>Lourival Gomes Machado</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cursos">
+                    <h3>Cursos</h3>
+                    <ul>
+                        <li class="atual">
+                            Trilha Fundamentar - Discover
+                            <p>Atualmente</p>
+                            <p>Rocketseat</p>
+                        </li>
+                        <li>
+                            Trilha Conectar - Discover
+                            <p>2022 - 2h23</p>
+                            <p>Rocketseat</p>
+                        </li>
+                        <li>
+                            Produções de Websites Expert - Front-End
+                            <p>2021 - 100 horas</p>
+                            <p>Senac</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="container-projetos" id="container-projetos">
+                <div class="container-grid">
+                    <div class="container-projeto">
+                        <div class="container-imagem">
+                            <figure>
+                                <img src="assets/imgs/aluraFlix.png"
+                                    alt="Projeto AluraFlix - Desenvolvido durante a imersão dev da Alura">
+                            </figure>
+                        </div>
+                        <div class="container-desc-links">
+                            <div class="tecnologias">
+                                <ul>
+                                    <li class="hover width-html">
+                                        <div class="tec-html"></div><span class="span hover-html">HTML</span>
+                                    </li>
+                                    <li class="hover width-css">
+                                        <div class="tec-css"></div><span class="span hover-css">CSS</span>
+                                    </li>
+                                    <li class="hover width-js">
+                                        <div class="tec-js"></div><span class="span hover-js">JS</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="desc">
+                                <h3 class="nome-projeto">AluraFlix</h3>
+                                <p>Projeto feito durante a imersão dev Alura.
+                                    Site onde você pode adicionar capas de seus filmes/séries/hqs favoritos e separa-los
+                                    por genêro.</p>
+                            </div>
+                            <div class="container-links">
+                                <div class="container-play">
+                                    <a href="https://arielemartins.github.io/exercicios_js/aluraFlix_imers%C3%A3oDev/"
+                                        target="_blank" class="play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="container-github">
+                                    <a href="https://github.com/ArieleMartins/exercicios_js/tree/master/aluraFlix_imers%C3%A3oDev"
+                                        target="_blank" class="repo-github"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-projeto">
+                        <div class="container-imagem">
+                            <figure>
+                                <img src="assets/imgs/conversores.png"
+                                    alt="Projeto AluraFlix - Desenvolvido durante a imersão dev da Alura">
+                            </figure>
+                        </div>
+                        <div class="container-desc-links">
+                            <div class="tecnologias">
+                                <ul>
+                                    <li class="hover width-html">
+                                        <div class="tec-html"></div><span class="span hover-html">HTML</span>
+                                    </li>
+                                    <li class="hover width-css">
+                                        <div class="tec-css"></div><span class="span hover-css">CSS</span>
+                                    </li>
+                                    <li class="hover width-js">
+                                        <div class="tec-js"></div><span class="span hover-js">JS</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="desc">
+                                <h3 class="nome-projeto">WebConversor</h3>
+                                <p>Projeto feito durante a imersão dev Alura.
+                                    Site com diversos conversore, como: Conversor de Moeda (Utilizando API para pegar os
+                                    valores em tempo real), Temperatura e Ano-luz.</p>
+                            </div>
+                            <div class="container-links">
+                                <div class="container-play">
+                                    <a href="https://arielemartins.github.io/exercicios_js/conversores/" target="_blank"
+                                        class="play"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                                <div class="container-github">
+                                    <a href="https://github.com/ArieleMartins/exercicios_js/tree/master/conversores"
+                                        target="_blank" class="repo-github"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
     </div>
-    <header class="cabecalho">
-        <div class="container-menu">
-            <a href="#home" class="logo">
-                {AM}
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="container-principal" id="home">
-        <!-- Conteudo principal -->
-        <div class="central">
-            <div class="apresentacao">
-
-                <div class="container-apresentacao">
-                    <div class="container-central">
-                        <h1 class="name animacao-pisca">Ariele Martins</h1>
-                        <h2 class="dev">Desenvolvedora Front-End</h2>
-
-                        <a href="https://github.com/ArieleMartins" target="_blank" class="fa-brands fa-github github">
-                            GitHub</a>
-                        <a href="https://www.linkedin.com/in/ariele-martins-b427541bb/" target="_blank"
-                            class="fa-brands fa-linkedin-in linkedin" style="margin-left:5vh"> Linkedin</a>
-
-                    </div>
-                </div>
-                <div class="container-imagem">
-                    <figure>
-                        <img src="imgs/design_portfolio2.png" alt="Ilustração - terminal e layout">
-                    </figure>
-                </div>
-            </div>
-        </div>
-
-    </main>
-    <section data-animacao="opacity" id="sobre">
-        <div class="container-hab">
-            <div class="habilidades">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-                    alt="html">
-            </div>
-            <div class="habilidades">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-                    alt="css">
-            </div>
-            <div class="habilidades">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
-                    alt="javascript">
-            </div>
-            <div class="habilidades">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-                    alt="csharp">
-            </div>
-            <div class="habilidades">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-                    alt="php">
-            </div>
-        </div>
-        <div class="section-sobre" >
-
-            <div class="container-grid-sobre">
-                <div class="container-sobre-img">
-                    <figure>
-                        <img src="imgs/ilustracao_maison_renan.png"
-                            alt="Ilustração - Programando - Ilustrador: Maison Melo">
-                    </figure>
-                </div>
-                <div class="container-sobre">
-                    <h3 class="titulo">SOBRE MIM</h3>
-                    <p class="sub">São Paulo, SP</p>
-                    <p class="sub2">Objetivo Profissional: Desenvolvedora FullStack</p>
-                    <p class="texto">Olá, me chamo Ariele, sou formada no curso técnico em informática pelo Senac e
-                        pretendo
-                        cursar Análise e
-                        Desenvolvimento de Software.
-                        Meu primeiro contato com programação foi em um curso a distância de desenvolvimento de games,
-                        onde
-                        comecei a
-                        mexer com as linguagens c# e java, porém não me identifiquei com a área de games. Então, me
-                        matriculei
-                        no curso técnico, onde conheci outras áreas de T.I e descobri que programação é
-                        exatamente o que quero seguir como profissão. Hoje, continuo estudando para seguir a carreira
-                        como
-                        desenvolvedora Full Stack.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-projetos" id="projetos">
-        <div class="grid-p">
-            <h3>PROJETOS</h3>
-            <div class="grid-projeto" id="list">
-                <div class="p-1 item">
-                    <div class="embreve">
-                        <p>EM ANDAMENTO...</p>
-                    </div>
-                </div>
-                <div class="p-2 item">
-                    <div class="embreve">
-                        <p>EM BREVE</p>
-                    </div>
-                </div>
-                <div class="p-3 item">
-                    <div class="embreve">
-                        <p>EM BREVE</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container-footer">
-            <div class="creditos">
-                <p class="label-creditos">Créditos:</p>
-                <p>Ilustração - Garota programando - Maison Melo</p>
-            </div>
-            <div class="contato">
-                <p class="label-email">Email para contato:</p>
-                <p><i class="fa-regular fa-envelope"></i> ariele.cmmelo@gmail.com</p>
-            </div>
-            <div class="telefone">
-                <p class="label-telefone">Whatsapp:</p>
-                <p><i class="fa-brands fa-whatsapp"></i> (11) 96794-9763</p>
-            </div>
-        </div>
-        <div class="copy">
-            <p>Copyright &copy 2022 - Desenvolvido por Ariele Martins</p>
-        </div>
-    </footer>
 </body>
+<script src="assets/js/telas.js"></script>
+<script src="assets/js/tema.js"></script>
 
 </html>
-<script src="js/script.js"></script>

@@ -1,0 +1,61 @@
+@media(max-width:1325px){
+    .container-flex-around{
+        justify-content: inherit;
+        flex-direction: column-reverse;
+    }
+    
+    main{
+        width: 100%;
+        border-radius:0;
+        border-color:#111018;
+    }
+    .cabecalho{
+        width: 100vw;
+        border-radius: 0;
+        background-color:#353535;
+        border:none;
+        font-size: 13px;
+        padding: 0;
+    }
+    .principal{
+        display: flex;
+        background-color: #111018;
+    }
+    
+    .container-flex{
+        row-gap: 0px;
+        height: 100%;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container-formacao, .container-sobre{
+        display: none;
+    }
+    
+    body{
+        padding: 0;
+    }
+    
+    .cabecalho .menu{
+        width: 100vw;
+    }
+    .cabecalho .menu ul {
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    .a-sobre, .a-projetos{
+        background-color: #474747;
+    }
+    .cabecalho .menu ul li{
+        height: 46px;
+        padding: 10px 25px;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    } 
+    
+}

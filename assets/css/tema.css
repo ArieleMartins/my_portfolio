@@ -1,0 +1,96 @@
+.container-tema{
+    padding: 20px;
+}
+.tema {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(226, 226, 226);
+    float: right;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 3px;
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.bolinha {
+    width: 25px;
+    height: 25px;
+    background-color: #111018;
+    border-radius: 50%;
+}
+
+.tema #icon-moon {
+    display: none;
+}
+
+.tema.claro #icon-sun {
+    display: none;
+}
+
+.tema.claro #icon-moon {
+    display: block;
+    color: white;
+}
+
+.tema.claro .bolinha {
+    background-color: white;
+    width: 22px;
+    height: 22px;
+}
+
+.tema.claro {
+    background-color: #111018;
+    padding-left: 3px;
+    padding-right: 5px;
+    
+}
+
+body.claro {
+    background-color: rgba(0 ,0 ,0 ,0.1);  
+    color:black;
+}
+body.claro ul li a{
+    color:black;
+}
+body.claro main,
+body.claro .cabecalho,
+body.claro .container-sobre,
+body.claro .container-formacao, body.claro .container-projetos, body.claro .container-desc-links {
+    background-color: rgb(240, 240, 240);
+    border-color: #2F2F2F;
+    
+}
+
+body.claro .cargo{
+    background-color: #111018;
+    color: white;
+}
+
+body.claro a{
+    color: black;
+    text-decoration: none;
+}
+body.claro .formacao p,body.claro .cursos p{
+    color:black;
+}
+body.claro .atual{
+    color:#8b71d1;
+}
+
+body.claro .barra{
+    background-color: #5f5f5f;
+}
+body.claro .repo-github, body.claro .play{
+    background-color: #ffd7df;
+}
+body.claro .repo-github:hover ,body.claro .play:hover{
+    box-shadow: none;
+    text-shadow: none;
+}
+
