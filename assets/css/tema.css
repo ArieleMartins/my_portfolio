@@ -61,12 +61,16 @@ body.claro ul li a{
 body.claro main,
 body.claro .cabecalho,
 body.claro .container-sobre,
-body.claro .container-formacao, body.claro .container-projetos, body.claro .container-desc-links {
+body.claro .container-formacao, body.claro .container-projetos {
     background-color: rgb(240, 240, 240);
     border-color: #2F2F2F;
     
 }
 
+body.claro .container-desc-links{
+    background-color: rgba(240, 240, 240, 0.671);
+    border-color: #2F2F2F;
+}
 body.claro .cargo{
     background-color: #111018;
     color: white;

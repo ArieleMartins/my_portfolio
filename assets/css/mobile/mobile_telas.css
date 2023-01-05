@@ -52,25 +52,11 @@
         display:flex;
         width: 100%;
         border-color:#111018;
-        height: 800px;
-        justify-content: center;
         row-gap: 30px;
+        padding: 20px;
+        height: 100vh;
     }
-    .select-projetos .container-grid{
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        row-gap: 30px;
-        padding: 0px;
-        padding-top: 20px;
-    }
-    .select-projetos .container-imagem figure {
-        width: 278px;
-        height: 155px;
-    }
-    .select-projetos .container-projeto {
-        width: 278px;
-        height: 346px;
-    }
+    
     .select-projetos .container-links .container-play .play {
         padding: 3px 20px;
         height: 30px;
@@ -85,13 +71,9 @@
         font-size: 16px;
     }
     .select-projetos .container-desc-links {
-        width: 278px;
-        height: 190px;
-        border-radius: 0px 0px 20px 20px;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 10px;
-    
+        height: 40%;
+        padding: 10px;
+        
     }
     .select-projetos .tecnologias ul {
         font-size: 12px;
@@ -101,5 +83,75 @@
     }
     .select-principal .container-sobre, .select-principal .container-projetos, .select-principal .container-formacao{
         display: none !important;
-    }    
+    }
+
+    .select-projetos .container-projeto{
+        height: 100%;
+    }
+}
+
+
+@media(max-width: 670px){
+    .container-grid{
+        padding: 0;
+    }
+    
+
+    .select-projetos .container-desc-links {
+        height: 100%;
+        border-radius: 2px;
+        padding: 10px;
+        transform: translateY(500px);
+    }
+    .select-projetos .container-links .container-play{
+        margin-left: 0;
+    }
+
+    .arrow-left, .arrow-right{
+        font-size: 18px;
+    }
+    .container-links{
+        height: 100%;
+        align-items: flex-end;
+    }
+    
+    
+}
+
+@media(max-width: 360px){
+    .select-projetos .container-desc-links .nome-projeto{
+        font-size: 12px;
+    }
+    .select-projetos .container-links .container-play .play {
+        padding: 2px 10px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .select-projetos .repo-github {
+        height: 20px;
+        padding: 2px 3px;
+        font-size: 10px;
+    }
+    .container-links{
+        padding: 10px;
+    }
+    .hover {
+        width: 16px;
+    }
+    .tecnologias {
+        height: 20px;
+    }
+    .select-projetos .desc p {
+        font-size: 10px;
+        overflow-y: scroll;
+        height:50px;
+    }
+    .select-projetos .container-desc-links {
+        padding: 0px;
+    }
+
+    #pessoais, #desafios{
+        font-size: 13px;
+    }
+    
 }
