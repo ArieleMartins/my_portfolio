@@ -29,7 +29,7 @@ main, .cabecalho, .container-sobre, .container-formacao, .container-projetos, .c
     
 }
 .container-flex {
-    width: 1002px;
+    width: 970px;
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,6 @@ main, .cabecalho, .container-sobre, .container-formacao, .container-projetos, .c
 }
 
 .cabecalho {
-    width: 1002px;
     height: 56px;
     
 }
@@ -62,7 +61,6 @@ main, .cabecalho, .container-sobre, .container-formacao, .container-projetos, .c
     
 }
 .container-sobre {
-    width: 1002px;
     height: 427px;
     display: flex;
     flex-direction: row;
