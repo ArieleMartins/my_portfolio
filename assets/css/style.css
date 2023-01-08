@@ -81,3 +81,23 @@ main, .cabecalho, .container-sobre, .container-formacao, .container-projetos, .c
 .a-sobre, .a-projetos, .principal{
     cursor: pointer;
 }
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-track, 
+::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-button{
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #c18c9250;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#C18C92;
+}
