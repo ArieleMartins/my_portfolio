@@ -86,7 +86,7 @@
     }
 
     .select-projetos .container-projeto{
-        height: 48vw;
+        height: 50vw;
     }
 }
 
@@ -114,8 +114,16 @@
         height: 100%;
         align-items: flex-end;
     }
+    .select-projetos .container-projeto{
+        height: 48vw;
+    }
     
-    
+}
+
+@media(max-width: 871px){
+    .select-projetos .container-projeto{
+        height: 49.5vw;
+    }
 }
 
 @media(max-width: 360px){
